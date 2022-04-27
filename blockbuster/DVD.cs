@@ -1,12 +1,12 @@
 ﻿using System;
 namespace blockbuster
 {
-	public class DVD : Movie
-	{
-		public DVD(string Title, int RunTime, List<string> Scenes, Genre MovieCategory) : base(Title, RunTime, Scenes, MovieCategory)
+    public class DVD : Movie
+    {
+        public DVD(string Title, int RunTime, List<string> Scenes, Genre MovieCategory) : base(Title, RunTime, Scenes, MovieCategory)
         {
 
-		}
+        }
         public override void Play(int num)
         {
             BlockBuster b2 = new BlockBuster();
@@ -32,7 +32,7 @@ namespace blockbuster
                             Console.WriteLine();
                             runAgain = WatchAnotherScene();
                         }
-                    }  
+                    }
                 }
                 catch (FormatException)
                 {
@@ -40,7 +40,7 @@ namespace blockbuster
                     continue;
                 }
                 break;
-            } 
+            }
         }
         public bool WatchAnotherScene()
         {
@@ -60,6 +60,13 @@ namespace blockbuster
             {
                 Console.WriteLine("Sorry, I didn't understand. Please try again.");
                 return WatchAnotherScene();
+            }
+        }
+        public void PlayWholeDVD(int num)
+        { BlockBuster b = new BlockBuster();
+            for (int i =0; i < b.ourMovies[num].Scenes.Count; i++)
+            {
+                Console.WriteLine($"Scene {i+1}: {b.ourMovies[num].Scenes[i]}");
             }
         }
     }

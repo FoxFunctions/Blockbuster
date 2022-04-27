@@ -8,7 +8,7 @@ namespace blockbuster
 		Romance,
 		Action
     }
-	public abstract class Movie
+	 public abstract class Movie
 	{
 		public string Title  { get; set; }
 		public int RunTime   { get; set; }
