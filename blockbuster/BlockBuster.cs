@@ -3,7 +3,7 @@ namespace blockbuster
 { 
 	public class BlockBuster
 	{	
-		public  List<string> testList = new List<string>() {"first thing", "second thing" };
+		public static List<string> testList = new List<string>() {"first thing", "second thing" };
 		public static List<string> coolRunningScene = new List<string>() { "Jamaica is really hot. No bobsled team yet", "Jamaica forms a bobsled team and is going to compete in the olympics!!", "Jamaica loses the bobsled race" };
 		public static List<string> marioScene = new List<string>() { "Bowser has trapped the princess in a pipe.", "Mario retreives his snake from his plumbing toolkit", "Mario rescues the princess" };
 		public static List<string> batmanScene = new List<string>() { "Batman works alone.", "Now, Batman has a sidekick.", "Batman notices Gotham is REALLY cold.", "Batman defeats Mr. Freeze." };
@@ -18,6 +18,8 @@ namespace blockbuster
 		public static DVD Twister = new DVD("Twister", 142, twisterScene, Genre.Romance);
 		public int userChoice;
 		public List<Movie> ourMovies = new List<Movie>() {CoolRunnings, Mario, BatmanAndRobin, WednesdayNightLights, SammySosa, Twister };
+		public static VHS v = new VHS("", 22, testList, Genre.Drama);
+		public static DVD d = new DVD("", 22, testList, Genre.Drama);
 
 		public void PrintMovies()
         {
@@ -85,15 +87,15 @@ namespace blockbuster
 					if (ourMovies[userMovieChoice] is DVD)
                     {
                         Console.WriteLine();
-						WednesdayNightLights.Play(userMovieChoice);
+						d.Play(userMovieChoice);
 						break;
 					}
 					else if (ourMovies[userMovieChoice] is VHS)
                     {
                         Console.WriteLine();
-						CoolRunnings.Play(userMovieChoice);
+						v.Play(userMovieChoice);
                         Console.WriteLine();
-						CoolRunnings.Rewind();
+						v.Rewind();
 						break;
 					}
 				}

@@ -2,15 +2,13 @@
 namespace blockbuster
 {
 	public class VHS : Movie
-	{
-        
+    { 
         int currentTime = 0;
         
         public VHS(string Title, int RunTime, List<string> Scenes, Genre MovieCategory) : base(Title, RunTime, Scenes, MovieCategory)
 		{
             
 		}
-
         public override void Play(int num)
         {
             BlockBuster b1 = new BlockBuster();
@@ -27,7 +25,6 @@ namespace blockbuster
         {
             currentTime = 0;
         } 
-        
     }
 }
 
