@@ -13,7 +13,7 @@ namespace blockbuster
 		public static VHS CoolRunnings = new VHS("Cool Runnings", 82, coolRunningScene, Genre.Comedy);
 		public static VHS Mario = new VHS("Mario: The Pipe Cleaner", 95, marioScene, Genre.Drama);
 		public static VHS BatmanAndRobin = new VHS("Batman and Robin", 124, batmanScene, Genre.Horror);
-		public static DVD WednesdayNightLights = new DVD("Wednesday Night Lights: The other guys.", 22, wednesdayScene, Genre.Drama);
+		public static DVD WednesdayNightLights = new DVD("Wednesday Night Lights: The other squad.", 22, wednesdayScene, Genre.Drama);
 		public static DVD SammySosa = new DVD("If I can do it, so can you: A guide to hitting home runs by Sammy Sosa", 65, sammyScene, Genre.Comedy);
 		public static DVD Twister = new DVD("Twister", 142, twisterScene, Genre.Romance);
 		public int userChoice;

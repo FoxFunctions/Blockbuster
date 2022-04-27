@@ -67,6 +67,7 @@ namespace blockbuster
             for (int i =0; i < b.ourMovies[num].Scenes.Count; i++)
             {
                 Console.WriteLine($"Scene {i+1}: {b.ourMovies[num].Scenes[i]}");
+                Console.WriteLine();
             }
         }
     }
