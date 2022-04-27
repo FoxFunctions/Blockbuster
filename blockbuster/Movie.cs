@@ -22,7 +22,6 @@ namespace blockbuster
 			this.Scenes = Scenes;
 			this.MovieCategory = MovieCategory;
 		}
-
 		public virtual void PrintInfo()
         {	
             Console.WriteLine("Movie Title: " + Title);
@@ -36,12 +35,6 @@ namespace blockbuster
                 Console.WriteLine($"Scene {i}: {sceneList[i]}.");
             }
         }
-
 		public abstract void Play(int num);
-		
 	}
 }
-
-
-/* A method called PrintScenes() that prints all the scenes in the list along with their index. 
-.*/
