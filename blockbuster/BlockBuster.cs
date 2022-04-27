@@ -17,7 +17,7 @@ namespace blockbuster
 		public static DVD SammySosa = new DVD("If I can do it, so can you: A guide to hitting home runs by Sammy Sosa", 65, sammyScene, Genre.Comedy);
 		public static DVD Twister = new DVD("Twister", 142, twisterScene, Genre.Romance);
 		public int userChoice;
-		public  List<Movie> ourMovies = new List<Movie>() {CoolRunnings, Mario, BatmanAndRobin, WednesdayNightLights, SammySosa, Twister };
+		public List<Movie> ourMovies = new List<Movie>() {CoolRunnings, Mario, BatmanAndRobin, WednesdayNightLights, SammySosa, Twister };
 
 		public void PrintMovies()
         {
